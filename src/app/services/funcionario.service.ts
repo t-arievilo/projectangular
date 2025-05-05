@@ -10,7 +10,7 @@ import { Response } from '../models/Response';
 })
 export class FuncionarioService {
 
-  private apiUrl = '${environment.ApiUrl}/Funcionario';
+  private apiUrl = `${environment.ApiUrl}/Funcionario`;
 
   constructor( private http: HttpClient ) { }
 
