@@ -2,9 +2,9 @@ export interface Funcionario {
     id? : number;
     nome: string;
     sobrenome: string;
-    departamento: string;
+    departamentoEnum: string;
     ativo: boolean;
-    turno: string;
+    turnoEnum: string;
     dataDeCriacao?: string;
     dataDeAlteracao?: string;
 }

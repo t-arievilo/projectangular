@@ -18,8 +18,8 @@
       </tr>
     </thead>
   
-    <tbody>
-      <tr *ngFor="let funcionario of funcionarios">
+    <tbody *ngFor="let funcionario of funcionarios">
+      <tr >
         <td>
           <div *ngIf="funcionario.ativo == true; else inativo">
             <img src="assets/images/ativo.png" alt="" style="height: 20px; width: 20px;">
@@ -31,10 +31,10 @@
         </td>
         <td>{{funcionario.nome}}</td>
         <td>{{funcionario.sobrenome}}</td>
-        <td>{{funcionario.departamento}}</td>
+        <td>{{funcionario.departamentoEnum}}</td>
         <td>
           <button routerLink="/editar/{{funcionario.id}}">Editar</button>
-          <button>Detalhes</button>
+          <button routerLink="/detalhes/{{funcionario.id}}">Detalhes</button>
         </td>
         <td>
           <button>Excluir</button>

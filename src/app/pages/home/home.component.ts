@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
 
     this.funcionarioService.GetFuncionarios().subscribe(data => {
       const dados = data.dados;
+      console.log(dados);
 
       dados.map((item) =>{
         item.dataDeCriacao = new Date(item.dataDeCriacao!).toLocaleDateString('pt-BR');
