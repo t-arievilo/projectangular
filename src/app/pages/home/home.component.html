@@ -58,7 +58,7 @@
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let funcionario"> {{funcionario.symbol}} 
 
-      <button mat-raised-button color="warn">Excluir</button>
+      <button mat-raised-button color="warn" (click)="OpenDialog(funcionario.id)">Excluir</button>
     </td>
   </ng-container>
 
