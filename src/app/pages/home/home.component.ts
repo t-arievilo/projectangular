@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   funcionarios: Funcionario[] = [];
   funcionarioGeral: Funcionario[] = [];
 
+  colunas = ['Situacao', 'Nome', 'Sobrenome', 'Departamento', 'Acoes', 'Excluir'];
+
   constructor(private funcionarioService: FuncionarioService) { }
 
   ngOnInit(): void {
