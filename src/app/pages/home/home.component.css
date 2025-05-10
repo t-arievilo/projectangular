@@ -7,3 +7,7 @@
     align-items: left;
     margin-bottom: 2rem;
 }
+
+.mat-mdc-button-base {
+    margin-left: 5px;
+}

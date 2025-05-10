@@ -45,8 +45,8 @@ export class HomeComponent implements OnInit {
 
   OpenDialog(id: number) {
     this.dialog.open(ExcluirComponent, {
-      width: '350px',
-      height: '350px',
+      width: '450px',
+      height: '450px',
       data: {
         id: id
       }

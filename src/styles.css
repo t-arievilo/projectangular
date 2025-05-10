@@ -10,7 +10,7 @@ mat-card {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     margin: 0 auto;
     padding: 3rem;
     margin-top: 5rem;
