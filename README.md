@@ -1,27 +1,64 @@
-# Projectangular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+# FuncionarioWebApiAngular
 
-## Development server
+Frontend Angular para consumo da API [FuncionarioWebApiEstudo](https://github.com/t-arievilo/FuncionarioWebApiEstudo).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🧰 Tecnologias Utilizadas
 
-## Code scaffolding
+- Angular 16.2.11
+- Angular CLI
+- Angular Material
+- TypeScript
+- SCSS (CSS modularizado)
+- RxJS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ✅ Funcionalidades
 
-## Build
+- Listagem de funcionários
+- Cadastro de novo funcionário
+- Visualização de detalhes
+- Edição
+- Inativação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ⚙️ Como Executar
 
-## Running unit tests
+### 1. Pré-requisitos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js (versão 16 ou superior)
+- Angular CLI (caso não tenha: `npm install -g @angular/cli`)
 
-## Running end-to-end tests
+### 2. Clonar o repositório
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone https://github.com/t-arievilo/FuncionarioWebApiAngular.git
+cd FuncionarioWebApiAngular
+```
 
-## Further help
+### 3. Instalar dependências
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+```
+
+### 4. Configurar o ambiente
+
+Certifique-se de que a API FuncionarioWebApiEstudo esteja rodando localmente.  
+Você pode alterar a URL base da API em:
+
+```ts
+src/environments/environment.ts
+```
+
+### 5. Rodar o projeto
+
+```bash
+ng serve
+```
+
+Acesse: [http://localhost:4200](http://localhost:4200)
+
+## 🖼️ Estilização
+
+- Utilizado Angular Material com temas básicos
+- Componentes com `mat-form-field`, `mat-button`, `mat-card`, entre outros.
+
